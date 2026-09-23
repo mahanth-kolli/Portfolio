@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahanth Sai Kolli — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mahanth Sai Kolli — aspiring developer, C/C++ learner and web development enthusiast based in Hyderabad." />
+
+  <!-- Fonts (the page falls back to system fonts if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+  <header class="navbar" id="top">
+    <nav class="nav-inner container-wide" aria-label="Main navigation">
+      <!-- EDIT: logo text -->
+      <a href="#home" class="logo">My Portfolio</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- =====================================================
+         HERO — kept exactly as the original design
+         EDIT: name, intro line, photo (assets/profile.png)
+         ===================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-name">MAHANTH SAI KOLLI</h1>
+          <p class="hero-intro">
+            Aspiring Developer | C/C++ Learner | Web Development Enthusiast based in
+            Hyderabad. Learning, experimenting, and getting a little better with every commit.
+          </p>
+          <a href="#journey" class="btn btn-blue">Explore My Journey</a>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/profile.png" alt="Portrait of Mahanth Sai Kolli" width="340" height="340" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ABOUT
+         EDIT: paragraphs + quick facts
+         ===================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <p class="eyebrow reveal">// About me</p>
+        <h2 class="section-title reveal">A developer in the making</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I am a Robotics and AI student and an aspiring developer passionate about exploring the world of robotics, artificial intelligence, automation, and software development. I enjoy learning programming, electronics, and web technologies, with a growing foundation in HTML, CSS, and C/C++.</p>
+            <p>I love working on hands-on projects that turn ideas into practical solutions, whether it's building robotic systems, experimenting with electronics, or creating useful digital experiences. I am continuously improving my technical skills, solving problems, and exploring how software works under the hood.</p>
+            <p>My goal is to combine my knowledge of robotics, AI, and software development to build innovative products that solve real-world problems. I believe in learning continuously, building consistently, and turning curiosity into meaningful projects.</p>
+          </div>
+
+          <aside class="card facts reveal" aria-label="Quick facts">
+            <p class="mono-label">Quick facts</p>
+            <dl>
+              <div><dt>Focus</dt><dd>Web Development</dd></div>
+              <div><dt>Learning</dt><dd>HTML, CSS, C/C++</dd></div>
+              <div><dt>Location</dt><dd>Hyderabad</dd></div>
+              <div><dt>Open to</dt><dd>Hackathons &amp; collabs</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SKILLS
+         EDIT: add/remove .skill-card blocks
+         ===================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow reveal">// Skills</p>
+        <h2 class="section-title reveal">What I know so far</h2>
+
+        <div class="grid-4">
+          <article class="card skill-card reveal">
+            <span class="skill-icon" style="--icon-bg:#e05d44">HT</span>
+            <h3>HTML</h3>
+            <ul class="dot-list">
+              <li>Semantic webpage structure</li>
+              <li>Core HTML elements</li>
+              <li>Page organization</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <span class="skill-icon" style="--icon-bg:#3b7dd8">CS</span>
+            <h3>CSS</h3>
+            <ul class="dot-list">
+              <li>Styling and layouts</li>
+              <li>Flexbox &amp; Grid fundamentals</li>
+              <li>Responsive design</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <span class="skill-icon" style="--icon-bg:#16a34a">C</span>
+            <h3>C / C++</h3>
+            <ul class="dot-list">
+              <li>Programming fundamentals</li>
+              <li>Problem-solving practice</li>
+              <li>Basic programming concepts</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <span class="skill-icon" style="--icon-bg:#24292f">Git</span>
+            <h3>Git &amp; GitHub <span class="skill-done">Completed</span></h3>
+            <ul class="dot-list">
+              <li>Version control basics</li>
+              <li>Commits &amp; repositories</li>
+              <li>Pushing code to GitHub</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Future learning goals (kept separate from current skills) -->
+        <div class="next-list reveal">
+          <p class="mono-label">Next on my list</p>
+          <ul class="chips">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Data Structures &amp; Algorithms</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         LEARNING JOURNEY
+         EDIT: change status classes: is-done / is-progress / is-planned
+         ===================================================== -->
+    <section class="section section-alt" id="journey">
+      <div class="container">
+        <p class="eyebrow reveal">// Learning journey</p>
+        <h2 class="section-title reveal">The road so far — and what’s next</h2>
+
+        <ol class="timeline">
+          <li class="milestone is-done reveal">
+            <h3>Learning HTML &amp; CSS <span class="badge">Done</span></h3>
+            <p>Built a solid foundation in page structure and styling.</p>
+          </li>
+          <li class="milestone is-progress reveal">
+            <h3>Practicing C/C++ <span class="badge">In progress</span></h3>
+            <p>Working through programming fundamentals and problem-solving.</p>
+          </li>
+          <li class="milestone is-planned reveal">
+            <h3>Building my first web project <span class="badge">Planned</span></h3>
+            <p>Putting HTML, CSS, and JavaScript together into something real.</p>
+          </li>
+          <li class="milestone is-planned reveal">
+            <h3>Exploring JavaScript <span class="badge">Planned</span></h3>
+            <p>The next step toward interactive, dynamic websites.</p>
+          </li>
+          <li class="milestone is-planned reveal">
+            <h3>Hackathons &amp; collaboration <span class="badge">Planned</span></h3>
+            <p>Learning by building with others and shipping under pressure.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROJECTS
+         ===================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal">// Projects</p>
+        <h2 class="section-title reveal">Things I’m building</h2>
+
+        <!-- Empty state: delete this block once you add your first real project -->
+        <div class="empty-state reveal">
+          <div class="empty-icon" aria-hidden="true">&lt;/&gt;</div>
+          <div>
+            <h3>Projects coming soon</h3>
+            <p>I’m currently learning and building. My first projects will appear here as soon as they’re ready — follow along on GitHub in the meantime.</p>
+          </div>
+          <a href="https://github.com/mahanth-kolli" class="btn btn-outline" target="_blank" rel="noopener">Follow on GitHub</a>
+        </div>
+
+        <!-- REAL PROJECTS go here. Copy this template, remove the comment markers, and fill it in:
+
+        <div class="grid-3 project-grid">
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>Project Title</h3>
+            </div>
+            <p>One or two sentences about what it does and what you learned.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/you/repo" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://you.github.io/repo" target="_blank" rel="noopener">Live demo →</a>
+            </div>
+          </article>
+        </div>
+        -->
+
+        <p class="mono-label planned-label reveal">Planned projects — not built yet</p>
+        <div class="grid-3">
+          <article class="card project-card reveal">
+            <div class="project-head">
+              <h3>C Practice Problems</h3><span class="tag-planned">Planned</span>
+            </div>
+            <p>A growing collection of solved C programming exercises to sharpen problem-solving.</p>
+            <ul class="tags"><li>C</li></ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-head">
+              <h3>Dynamic Website</h3><span class="tag-planned">Planned</span>
+            </div>
+            <p>Building a dynamic, interactive website that brings HTML, CSS, and JavaScript together.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-head">
+              <h3>Lane Following Robot</h3><span class="tag-planned">Planned</span>
+            </div>
+            <p>A small robot that uses sensors to detect and follow a lane on its own.</p>
+            <ul class="tags"><li>Robotics</li><li>Electronics</li><li>C/C++</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT
+         EDIT: email, GitHub, LinkedIn links
+         ===================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="eyebrow reveal">// Contact</p>
+        <h2 class="section-title reveal">Let’s connect</h2>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <p class="lead">Whether it’s a hackathon team, a study group, feedback on my work, or just a hello — I’d love to hear from you. The fastest way to reach me is email.</p>
+
+            <ul class="contact-links">
+              <li><a href="https://github.com/mahanth-kolli" target="_blank" rel="noopener"><span class="c-icon" aria-hidden="true">Gi</span>GitHub <span class="arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="https://www.linkedin.com/in/mahanth-sai-kolli-503490414/" target="_blank" rel="noopener"><span class="c-icon" aria-hidden="true">Li</span>LinkedIn <span class="arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="mailto:mahanthsaik@gmail.com"><span class="c-icon" aria-hidden="true">Em</span>Email <span class="arrow" aria-hidden="true">→</span></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo"><span>&lt;</span>Mahanth Sai Kolli <span>/&gt;</span></a>
+      <p>© <span id="year">2026</span> Mahanth Sai Kolli</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/mahanth-kolli" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mahanth-sai-kolli-503490414/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:mahanthsaik@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
